@@ -3,3 +3,5 @@ xcode_workspace: Tester.xcworkspace
 xcode_scheme: Tester
 osx_image: xcode7.3
 
+script:
+  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
