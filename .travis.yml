@@ -1,7 +1,6 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_sdk: iphonesimulator7.0 #5
 
 script:
-  - xctool -workspace Tester.xcworkspace -scheme Tester ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace Tester.xcworkspace -scheme Tester  ONLY_ACTIVE_ARCH=NO
+  - xctool -workspace Tester.xcworkspace -scheme Tester -sdk iphonesimulator6.0  ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace Tester.xcworkspace -scheme Tester -sdk iphonesimulator6.0  ONLY_ACTIVE_ARCH=NO
