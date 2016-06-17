@@ -11,6 +11,9 @@
 @interface TestHelper : NSObject
 
 
+@property NSMutableData * mdata; // in .h file
++(void) saveFile:(NSString*)string;
+
 +(BOOL) isProperSubsetOf: (NSDictionary*) leftTree
                rightTree:(NSDictionary*) rightTree
             checkValues: (BOOL) checkValues

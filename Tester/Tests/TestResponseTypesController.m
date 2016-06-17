@@ -227,8 +227,8 @@
 
         // Test whether the captured response is as we expected
         XCTAssertTrue(response!=nil);
-
-        XCTAssertTrue([[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://dl.dropboxusercontent.com/u/31838656/binary.png"]] isEqualToData:response]);
+        [TestHelper saveFile:@"https://dl.dropboxusercontent.com/u/31838656/binary.png"];
+        XCTAssertTrue([[NSData dataWithContentsOfFile:@"filename"] isEqualToData:response]);
         [expectation fulfill];
     }];
     [self wait];

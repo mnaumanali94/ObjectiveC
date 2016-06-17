@@ -6,9 +6,23 @@
 #import "TestHelper.h"
 
 @implementation TestHelper
+
+@synthesize mdata;
+
 /**
 Simple JSON serialization
 */
++(void) saveFile:(NSString*)string
+{
+    NSString *stringURL = string;
+    NSURL  *url = [NSURL URLWithString:stringURL];
+    NSData *urlData = [NSData dataWithContentsOfURL:url];
+    if ( urlData )
+    {
+        NSString  *filePath = @"filename";
+        [urlData writeToFile:filePath atomically:YES];
+    }
+}
 +(NSDictionary*) jsonDeserialize:(NSString*) json
 {
 return [NSJSONSerialization
