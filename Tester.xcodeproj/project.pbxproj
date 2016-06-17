@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AAEE5E87CAD05D168656264B /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				AACF2FCBE910DF27909EEA33 /* MultiBuild Framework */,
+			);
+			dependencies = (
+				AA64289540A97CFC567617A7 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		32150B59075C3AC3889F048A /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E89F1D003930F7FE5EBE620 /* libPods-Tests.a */; };
+		AA033D32966F32BFBD65DD34 /* HttpMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = AA31975203C7EAF86B56F415 /* HttpMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA04A8278A806E8556B67412 /* SuiteCodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA10A2EE6659F989D7179D63 /* SuiteCodeHelper.m */; };
+		AA0C599E7D4F200F8897AFF7 /* NSDate+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC241C706904812E6B3DBD1 /* NSDate+extension.m */; };
+		AA0CB291813F0C9DE22112E6 /* EchoController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA578E2EB7071C9F9F0089F9 /* EchoController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA156D6B8C98CDFEC6517A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C52504A381F7C41B67182 /* Foundation.framework */; };
+		AA19178EE1D12F29A92B4F31 /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE099E73BF6EE469D4AB217 /* HttpResponse.m */; };
+		AA1A7ED3A893EFFCD4DDD12E /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */; };
+		AA1CB6712A3295B84DB9178B /* EchoResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD9F47F067B3BD22273DDB2 /* EchoResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA25483CB686B6F83D93D99A /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4AC7C4C58FE429DBA3283B /* Employee.m */; };
+		AA2AE5E262A47B2AE9144CDE /* BodyParamsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6FBBCFDFC1CD583FFDAC1D /* BodyParamsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA2F009821D5B379D796665A /* APIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6FB783652324EFB3E7BA31 /* APIHelper.m */; };
+		AA31CBEB3F8B53252394E30B /* ResponseTypesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA768DE4E48BC66C1BFB968F /* ResponseTypesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3273E6387096C87FD58FA3 /* TestTemplateParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9E4BF0D8AE263F71397F5A /* TestTemplateParamsController.m */; };
+		AA329D79EFE33B4EC918A0EB /* ErrorCodesController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA06631B2AB0BB7A4923908 /* ErrorCodesController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3698B05CCA44CCFB1E3D3E /* QueryParamController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA33DCA7DFE83F7035C92B56 /* QueryParamController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA369CF5E1EECAA33F665E22 /* DaysHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF045FC8FD0885246196718 /* DaysHelper.m */; };
+		AA3FC84281C8B49DAC26F961 /* APIError.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1C1510C4F3D56A3A951CFD /* APIError.m */; };
+		AA45F05D18B92E8AC297BB5C /* TemplateParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA79CE7E6F77ECCE162D2B12 /* TemplateParamsController.m */; };
+		AA4CC555AF28E082DAFFCBF7 /* TestQueryParamController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2D42699F8ACB0FDB343A3E /* TestQueryParamController.m */; };
+		AA529CABAEB521872C72AA54 /* EchoController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5C9CA98A4B598C99167469 /* EchoController.m */; };
+		AA561654D3DF3A6B4926FBE4 /* IHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1173ED2E32674C48620A64 /* IHttpClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA583614271A763C447B3909 /* TestHeaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23F646369ACFE2FF6A8CC1 /* TestHeaderController.m */; };
+		AA5A84A1C36A9C776EA23E5D /* FormParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3AE9AC7C77579B9B815DF1 /* FormParamsController.m */; };
+		AA5C92E71FB68A10000E8272 /* HeaderController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA20F33983244ED3B0742CE6 /* HeaderController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA5C98767EC06D4E40B57A79 /* JSONValueTransformer+NSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = AA575224753AD22C62664B85 /* JSONValueTransformer+NSDate.h */; };
+		AA5D573CBB0B8B855EA01619 /* JSONValueTransformer+NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA49AA68151B551DE5F5CD4F /* JSONValueTransformer+NSDate.m */; };
+		AA67CB3B08876680F16C89F4 /* Employee.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9424D2A073CC7E9D9BE723 /* Employee.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6A70A571DC41D346176BA2 /* SendMixedArrayInput.m in Sources */ = {isa = PBXBuildFile; fileRef = AA86E3A2EBD012B7950D90CB /* SendMixedArrayInput.m */; };
+		AA6A992AAC458142AD7D115F /* QueryParamController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB9973A85EE3A85795CB205 /* QueryParamController.m */; };
+		AA6B5EEB8B2708E4E8F16C7F /* TestFormParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD020BC7048104AF09C6E89 /* TestFormParamsController.m */; };
+		AA6B79FF7448E7660B7228D5 /* Days.h in Headers */ = {isa = PBXBuildFile; fileRef = AA4071295E8D66CFFD28A3E3 /* Days.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6F05CDE539FCA5CEB6C753 /* ServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA75B88A36C463D373D2C8E4 /* ServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA6FEE6B66775D07ABC1A40A /* EchoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA37F1BC9C7B1886CFC780AE /* EchoResponse.m */; };
+		AA727179A75A81C7BFF5708F /* HttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA751EC3D8D1E1F02BC41D50 /* HttpBodyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */; };
+		AA776B0F0B5E1C7392E7987B /* DaysHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA71AC17A9398247A14AA0B3 /* DaysHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7E065917E1C724EF86B951 /* Person.h in Headers */ = {isa = PBXBuildFile; fileRef = AABA858D2309D90A1D800CE7 /* Person.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA82C0EAC5F0BDF611D9F5EE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAA79CED77DCC1F6DE6739A /* Person.m */; };
+		AA869698C6D2546D7C069967 /* HeaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAED92C6B8B4E1025EB19B46 /* HeaderController.m */; };
+		AA89242CA7F68672538185FA /* SuiteCode.h in Headers */ = {isa = PBXBuildFile; fileRef = AA864233B62866B86D62F3EA /* SuiteCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9312BDFDCA04EB5F7358C2 /* HttpStringResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA965619B87489A9E67937A1 /* FormParamsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD9FC783C8925E94A37493B /* FormParamsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA98090BE2C3171059117154 /* ErrorCodesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1A6296C9802246B3BB2806 /* ErrorCodesController.m */; };
+		AA9818DB74972243F3C8D7CA /* BodyParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA85A274B12366AAB61D44CB /* BodyParamsController.m */; };
+		AA9A82CCE1219D4C5910FE3B /* APIError.h in Headers */ = {isa = PBXBuildFile; fileRef = AA48BFFBF934C1B6D2406E77 /* APIError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA9B8CABE328A66C2F9C101E /* HttpStringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA78889B46E63B2815E8A97C /* HttpStringResponse.m */; };
+		AA9E17FED3B6812D11EB1F51 /* TestHelper/TestHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD3E776A95AA25C34B1CED8 /* TestHelper/TestHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAA4DBB5CE589B5B0303FD74 /* HttpContext.h in Headers */ = {isa = PBXBuildFile; fileRef = AA406D274803136B567B1E87 /* HttpContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAAC597BE2D31A172141E29F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA50BE499546DA373B497FFF /* BaseModel.m */; };
+		AAB3AA4B658C5443700D0C0C /* APIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB4CF31C21632D7D8BE5041 /* TestErrorCodesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6F941A8082E98E5B0435EC /* TestErrorCodesController.m */; };
+		AAB6FF0AA3C1D0F2B493849F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA12F8206E62E7B415ACF0E1 /* UIKit.framework */; };
+		AAB7EE1F9E52AE27227954F7 /* SendMixedArrayInput.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB5AC9D0CE9C4014A7868B3 /* SendMixedArrayInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB95DE29AE69E555D2350F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6C52504A381F7C41B67182 /* Foundation.framework */; };
+		AABA8B9B82339644E947BFAF /* ResponseTypesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7F4C41DF6D6377A4CB1060 /* ResponseTypesController.m */; };
+		AABB789B7FACBAA15967C8E9 /* BaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5D18C97F1ED2716A752AA8 /* BaseController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AABE48236E273EF1DB3275E0 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCE585F7417595F3776274 /* Configuration.m */; };
+		AAC148590469057D243670D0 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5B4687013A29D882FCE310 /* BaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC73F5E8411C02EEC4850B1 /* TestEchoController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA737B667B57269C7B298FDD /* TestEchoController.m */; };
+		AAC751CC6398471D8AE95DF2 /* UnirestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */; };
+		AAC9784606712E2F510C5892 /* NSDate+extension.h in Headers */ = {isa = PBXBuildFile; fileRef = AA87B0D5C82751CDDB81A704 /* NSDate+extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACF04766EFEBE941836F5BA /* TemplateParamsController.h in Headers */ = {isa = PBXBuildFile; fileRef = AAA10C67F5E675DA5FF923EE /* TemplateParamsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACFD6891D9D5304C68588F9 /* TestResponseTypesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA90DFFF21C4B1C148F75B4 /* TestResponseTypesController.m */; };
+		AAD0FE4E6546B42C42539D57 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA940686A027FAC0683E87AE /* BaseController.m */; };
+		AAD23B63A95A1922D975BDD7 /* TestHelper/TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAED5F1ABE468E7059C07921 /* TestHelper/TestHelper.m */; };
+		AAD8F51F714DD5966CCD659B /* HttpBodyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD9244039DF31452C9D7C2B /* Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFDA2A62B62D6847BB95686 /* Configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AADD0D6E9D0D2ECB46296055 /* UnirestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AADE4B211C778689E60B2D58 /* HttpContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFF0E81765DC544641E6641 /* HttpContext.m */; };
+		AAE3B94FA19A595C3F604173 /* TestBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1214C7376AAAB2D01C5DAD /* TestBaseController.m */; };
+		AAEBEA969AC5C8A953A37217 /* TestBaseController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA38D29922B47B63236174CA /* TestBaseController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEC3975AAF8AA1308CB9DB7 /* libTester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFFB6F12C34BFAB07465B52 /* libTester.a */; };
+		AAEDEC951C874573CC2F140C /* ServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD49523E7F0E6108DADA72F /* ServerResponse.m */; };
+		AAF3192D0D9D1481757BA507 /* TestBodyParamsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB60B5875E5CC2948C31687 /* TestBodyParamsController.m */; };
+		AAF7400D24EAAAB9555F87BB /* SuiteCodeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF4317000A3B7D99F37B785 /* SuiteCodeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAFBD14918A6E076A0BF62B7 /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF67FE2ADA5B77379090F09 /* HttpResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBEE880BF74CC5F8F6D9F6B9 /* libPods-Tester.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C944BC2B13B3FA5F0101E91 /* libPods-Tester.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAD86B0C4A909E780CCAF44D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA28707B011D40DC5FCAABD7;
+			remoteInfo = Tester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA6976EEF676DCB4C0327BF2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		40DE6DC38BBB3B2A4E22FFF1 /* Pods-Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tester/Pods-Tester.debug.xcconfig"; sourceTree = "<group>"; };
+		7C944BC2B13B3FA5F0101E91 /* libPods-Tester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2308BEE547A76427891AD1 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9E89F1D003930F7FE5EBE620 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA10A2EE6659F989D7179D63 /* SuiteCodeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuiteCodeHelper.m; path = Models/SuiteCodeHelper.m; sourceTree = "<group>"; };
+		AA1173ED2E32674C48620A64 /* IHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IHttpClient.h; path = Http/Client/IHttpClient.h; sourceTree = "<group>"; };
+		AA1214C7376AAAB2D01C5DAD /* TestBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestBaseController.m; path = Tester/Tests/TestBaseController.m; sourceTree = "<group>"; };
+		AA12F8206E62E7B415ACF0E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA1A6296C9802246B3BB2806 /* ErrorCodesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ErrorCodesController.m; path = Controllers/ErrorCodesController.m; sourceTree = "<group>"; };
+		AA1C1510C4F3D56A3A951CFD /* APIError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIError.m; sourceTree = "<group>"; };
+		AA20F33983244ED3B0742CE6 /* HeaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderController.h; path = Controllers/HeaderController.h; sourceTree = "<group>"; };
+		AA23F646369ACFE2FF6A8CC1 /* TestHeaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestHeaderController.m; path = Tester/Tests/TestHeaderController.m; sourceTree = "<group>"; };
+		AA2D42699F8ACB0FDB343A3E /* TestQueryParamController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestQueryParamController.m; path = Tester/Tests/TestQueryParamController.m; sourceTree = "<group>"; };
+		AA31975203C7EAF86B56F415 /* HttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpMethod.h; path = Http/Request/HttpMethod.h; sourceTree = "<group>"; };
+		AA33DCA7DFE83F7035C92B56 /* QueryParamController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QueryParamController.h; path = Controllers/QueryParamController.h; sourceTree = "<group>"; };
+		AA37F1BC9C7B1886CFC780AE /* EchoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EchoResponse.m; path = Models/EchoResponse.m; sourceTree = "<group>"; };
+		AA38D29922B47B63236174CA /* TestBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestBaseController.h; path = Tester/Tests/TestBaseController.h; sourceTree = "<group>"; };
+		AA3AE9AC7C77579B9B815DF1 /* FormParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormParamsController.m; path = Controllers/FormParamsController.m; sourceTree = "<group>"; };
+		AA406D274803136B567B1E87 /* HttpContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpContext.h; path = Http/Client/HttpContext.h; sourceTree = "<group>"; };
+		AA4071295E8D66CFFD28A3E3 /* Days.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Days.h; path = Models/Days.h; sourceTree = "<group>"; };
+		AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpStringResponse.h; path = Http/Response/HttpStringResponse.h; sourceTree = "<group>"; };
+		AA48BFFBF934C1B6D2406E77 /* APIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIError.h; sourceTree = "<group>"; };
+		AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHelper.h; sourceTree = "<group>"; };
+		AA49AA68151B551DE5F5CD4F /* JSONValueTransformer+NSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+NSDate.m"; sourceTree = "<group>"; };
+		AA4AC7C4C58FE429DBA3283B /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = Models/Employee.m; sourceTree = "<group>"; };
+		AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnirestClient.m; path = Http/Client/UnirestClient.m; sourceTree = "<group>"; };
+		AA50BE499546DA373B497FFF /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseModel.m; path = Models/BaseModel.m; sourceTree = "<group>"; };
+		AA575224753AD22C62664B85 /* JSONValueTransformer+NSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+NSDate.h"; sourceTree = "<group>"; };
+		AA578E2EB7071C9F9F0089F9 /* EchoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EchoController.h; path = Controllers/EchoController.h; sourceTree = "<group>"; };
+		AA5B4687013A29D882FCE310 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseModel.h; path = Models/BaseModel.h; sourceTree = "<group>"; };
+		AA5C9CA98A4B598C99167469 /* EchoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EchoController.m; path = Controllers/EchoController.m; sourceTree = "<group>"; };
+		AA5CAA5BE3DEB378387D5842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tester/Tests/Info.plist; sourceTree = "<group>"; };
+		AA5D18C97F1ED2716A752AA8 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseController.h; path = Controllers/BaseController.h; sourceTree = "<group>"; };
+		AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpBodyRequest.h; path = Http/Request/HttpBodyRequest.h; sourceTree = "<group>"; };
+		AA6C52504A381F7C41B67182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA6F941A8082E98E5B0435EC /* TestErrorCodesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestErrorCodesController.m; path = Tester/Tests/TestErrorCodesController.m; sourceTree = "<group>"; };
+		AA6FB783652324EFB3E7BA31 /* APIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHelper.m; sourceTree = "<group>"; };
+		AA6FBBCFDFC1CD583FFDAC1D /* BodyParamsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BodyParamsController.h; path = Controllers/BodyParamsController.h; sourceTree = "<group>"; };
+		AA71AC17A9398247A14AA0B3 /* DaysHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DaysHelper.h; path = Models/DaysHelper.h; sourceTree = "<group>"; };
+		AA737B667B57269C7B298FDD /* TestEchoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestEchoController.m; path = Tester/Tests/TestEchoController.m; sourceTree = "<group>"; };
+		AA75B88A36C463D373D2C8E4 /* ServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerResponse.h; path = Models/ServerResponse.h; sourceTree = "<group>"; };
+		AA768DE4E48BC66C1BFB968F /* ResponseTypesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResponseTypesController.h; path = Controllers/ResponseTypesController.h; sourceTree = "<group>"; };
+		AA7821CD0DA92EF87789C61D /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA78889B46E63B2815E8A97C /* HttpStringResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpStringResponse.m; path = Http/Response/HttpStringResponse.m; sourceTree = "<group>"; };
+		AA79CE7E6F77ECCE162D2B12 /* TemplateParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateParamsController.m; path = Controllers/TemplateParamsController.m; sourceTree = "<group>"; };
+		AA7F4C41DF6D6377A4CB1060 /* ResponseTypesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResponseTypesController.m; path = Controllers/ResponseTypesController.m; sourceTree = "<group>"; };
+		AA85A274B12366AAB61D44CB /* BodyParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BodyParamsController.m; path = Controllers/BodyParamsController.m; sourceTree = "<group>"; };
+		AA864233B62866B86D62F3EA /* SuiteCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuiteCode.h; path = Models/SuiteCode.h; sourceTree = "<group>"; };
+		AA86E3A2EBD012B7950D90CB /* SendMixedArrayInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SendMixedArrayInput.m; path = Models/SendMixedArrayInput.m; sourceTree = "<group>"; };
+		AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpRequest.m; path = Http/Request/HttpRequest.m; sourceTree = "<group>"; };
+		AA87B0D5C82751CDDB81A704 /* NSDate+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+extension.h"; sourceTree = "<group>"; };
+		AA940686A027FAC0683E87AE /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseController.m; path = Controllers/BaseController.m; sourceTree = "<group>"; };
+		AA9424D2A073CC7E9D9BE723 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = Models/Employee.h; sourceTree = "<group>"; };
+		AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpBodyRequest.m; path = Http/Request/HttpBodyRequest.m; sourceTree = "<group>"; };
+		AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpRequest.h; path = Http/Request/HttpRequest.h; sourceTree = "<group>"; };
+		AA9E4BF0D8AE263F71397F5A /* TestTemplateParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestTemplateParamsController.m; path = Tester/Tests/TestTemplateParamsController.m; sourceTree = "<group>"; };
+		AAA06631B2AB0BB7A4923908 /* ErrorCodesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ErrorCodesController.h; path = Controllers/ErrorCodesController.h; sourceTree = "<group>"; };
+		AAA10C67F5E675DA5FF923EE /* TemplateParamsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateParamsController.h; path = Controllers/TemplateParamsController.h; sourceTree = "<group>"; };
+		AAA90DFFF21C4B1C148F75B4 /* TestResponseTypesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestResponseTypesController.m; path = Tester/Tests/TestResponseTypesController.m; sourceTree = "<group>"; };
+		AAAA79CED77DCC1F6DE6739A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
+		AAB5AC9D0CE9C4014A7868B3 /* SendMixedArrayInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SendMixedArrayInput.h; path = Models/SendMixedArrayInput.h; sourceTree = "<group>"; };
+		AAB60B5875E5CC2948C31687 /* TestBodyParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestBodyParamsController.m; path = Tester/Tests/TestBodyParamsController.m; sourceTree = "<group>"; };
+		AAB9973A85EE3A85795CB205 /* QueryParamController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QueryParamController.m; path = Controllers/QueryParamController.m; sourceTree = "<group>"; };
+		AABA858D2309D90A1D800CE7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
+		AAC241C706904812E6B3DBD1 /* NSDate+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+extension.m"; sourceTree = "<group>"; };
+		AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnirestClient.h; path = Http/Client/UnirestClient.h; sourceTree = "<group>"; };
+		AAD020BC7048104AF09C6E89 /* TestFormParamsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestFormParamsController.m; path = Tester/Tests/TestFormParamsController.m; sourceTree = "<group>"; };
+		AAD0DA7640475994DA60613B /* Tester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tester-Prefix.pch"; sourceTree = "<group>"; };
+		AAD3E776A95AA25C34B1CED8 /* TestHelper/TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper/TestHelper.h; sourceTree = "<group>"; };
+		AAD49523E7F0E6108DADA72F /* ServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerResponse.m; path = Models/ServerResponse.m; sourceTree = "<group>"; };
+		AAD9F47F067B3BD22273DDB2 /* EchoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EchoResponse.h; path = Models/EchoResponse.h; sourceTree = "<group>"; };
+		AAD9FC783C8925E94A37493B /* FormParamsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormParamsController.h; path = Controllers/FormParamsController.h; sourceTree = "<group>"; };
+		AAE099E73BF6EE469D4AB217 /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpResponse.m; path = Http/Response/HttpResponse.m; sourceTree = "<group>"; };
+		AAED5F1ABE468E7059C07921 /* TestHelper/TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper/TestHelper.m; sourceTree = "<group>"; };
+		AAED92C6B8B4E1025EB19B46 /* HeaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderController.m; path = Controllers/HeaderController.m; sourceTree = "<group>"; };
+		AAF045FC8FD0885246196718 /* DaysHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DaysHelper.m; path = Models/DaysHelper.m; sourceTree = "<group>"; };
+		AAF4317000A3B7D99F37B785 /* SuiteCodeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuiteCodeHelper.h; path = Models/SuiteCodeHelper.h; sourceTree = "<group>"; };
+		AAF67FE2ADA5B77379090F09 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpResponse.h; path = Http/Response/HttpResponse.h; sourceTree = "<group>"; };
+		AAFCE585F7417595F3776274 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		AAFDA2A62B62D6847BB95686 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		AAFF0E81765DC544641E6641 /* HttpContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpContext.m; path = Http/Client/HttpContext.m; sourceTree = "<group>"; };
+		AAFFB6F12C34BFAB07465B52 /* libTester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTester.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2552ACAF3059C227885F381 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE318A4331D63D048C86858A /* Pods-Tester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tester.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tester/Pods-Tester.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA6953230CA509B32593BC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB6FF0AA3C1D0F2B493849F /* UIKit.framework in Frameworks */,
+				AAEC3975AAF8AA1308CB9DB7 /* libTester.a in Frameworks */,
+				AAB95DE29AE69E555D2350F1 /* Foundation.framework in Frameworks */,
+				32150B59075C3AC3889F048A /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC01B07AF245CB0CDD170FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA156D6B8C98CDFEC6517A86 /* Foundation.framework in Frameworks */,
+				EBEE880BF74CC5F8F6D9F6B9 /* libPods-Tester.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA01453D8EB8DA40D84E17AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAB5AC9D0CE9C4014A7868B3 /* SendMixedArrayInput.h */,
+				AA86E3A2EBD012B7950D90CB /* SendMixedArrayInput.m */,
+				AA75B88A36C463D373D2C8E4 /* ServerResponse.h */,
+				AAD49523E7F0E6108DADA72F /* ServerResponse.m */,
+				AAD9F47F067B3BD22273DDB2 /* EchoResponse.h */,
+				AA37F1BC9C7B1886CFC780AE /* EchoResponse.m */,
+				AABA858D2309D90A1D800CE7 /* Person.h */,
+				AAAA79CED77DCC1F6DE6739A /* Person.m */,
+				AA4071295E8D66CFFD28A3E3 /* Days.h */,
+				AA71AC17A9398247A14AA0B3 /* DaysHelper.h */,
+				AAF045FC8FD0885246196718 /* DaysHelper.m */,
+				AA864233B62866B86D62F3EA /* SuiteCode.h */,
+				AAF4317000A3B7D99F37B785 /* SuiteCodeHelper.h */,
+				AA10A2EE6659F989D7179D63 /* SuiteCodeHelper.m */,
+				AA9424D2A073CC7E9D9BE723 /* Employee.h */,
+				AA4AC7C4C58FE429DBA3283B /* Employee.m */,
+				AA50BE499546DA373B497FFF /* BaseModel.m */,
+				AA5B4687013A29D882FCE310 /* BaseModel.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AA15EC52DAFD549AA1AE2F7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0DA7640475994DA60613B /* Tester-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA56C8CB120D74D9FD3C57DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D18C97F1ED2716A752AA8 /* BaseController.h */,
+				AA940686A027FAC0683E87AE /* BaseController.m */,
+				AA768DE4E48BC66C1BFB968F /* ResponseTypesController.h */,
+				AA7F4C41DF6D6377A4CB1060 /* ResponseTypesController.m */,
+				AAA06631B2AB0BB7A4923908 /* ErrorCodesController.h */,
+				AA1A6296C9802246B3BB2806 /* ErrorCodesController.m */,
+				AA6FBBCFDFC1CD583FFDAC1D /* BodyParamsController.h */,
+				AA85A274B12366AAB61D44CB /* BodyParamsController.m */,
+				AAD9FC783C8925E94A37493B /* FormParamsController.h */,
+				AA3AE9AC7C77579B9B815DF1 /* FormParamsController.m */,
+				AA578E2EB7071C9F9F0089F9 /* EchoController.h */,
+				AA5C9CA98A4B598C99167469 /* EchoController.m */,
+				AA20F33983244ED3B0742CE6 /* HeaderController.h */,
+				AAED92C6B8B4E1025EB19B46 /* HeaderController.m */,
+				AA33DCA7DFE83F7035C92B56 /* QueryParamController.h */,
+				AAB9973A85EE3A85795CB205 /* QueryParamController.m */,
+				AAA10C67F5E675DA5FF923EE /* TemplateParamsController.h */,
+				AA79CE7E6F77ECCE162D2B12 /* TemplateParamsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AA613A713697E8E9E6AB31AB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AA6B29F99CA666FECC5C487E /* HttpBodyRequest.h */,
+				AA956F01D2F5D670DC35B362 /* HttpBodyRequest.m */,
+				AA31975203C7EAF86B56F415 /* HttpMethod.h */,
+				AA98C9716BFF8AE5BFC28898 /* HttpRequest.h */,
+				AA87A2CD71372D1DB3FF6520 /* HttpRequest.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		AA6945303944BAD4445B8A6F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				AA1173ED2E32674C48620A64 /* IHttpClient.h */,
+				AACAA536E84B6D2BF2CDE608 /* UnirestClient.h */,
+				AA4D7A678B8A985E2C50CBFF /* UnirestClient.m */,
+				AA406D274803136B567B1E87 /* HttpContext.h */,
+				AAFF0E81765DC544641E6641 /* HttpContext.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		AA71073E67D83B062E3169C9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5CAA5BE3DEB378387D5842 /* Info.plist */,
+				AA1214C7376AAAB2D01C5DAD /* TestBaseController.m */,
+				AA38D29922B47B63236174CA /* TestBaseController.h */,
+				AAA90DFFF21C4B1C148F75B4 /* TestResponseTypesController.m */,
+				AA6F941A8082E98E5B0435EC /* TestErrorCodesController.m */,
+				AAB60B5875E5CC2948C31687 /* TestBodyParamsController.m */,
+				AAD020BC7048104AF09C6E89 /* TestFormParamsController.m */,
+				AA737B667B57269C7B298FDD /* TestEchoController.m */,
+				AA23F646369ACFE2FF6A8CC1 /* TestHeaderController.m */,
+				AA2D42699F8ACB0FDB343A3E /* TestQueryParamController.m */,
+				AA9E4BF0D8AE263F71397F5A /* TestTemplateParamsController.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		AA8858C16C1B7799495DB67C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7821CD0DA92EF87789C61D /* Tests.xctest */,
+				AAFFB6F12C34BFAB07465B52 /* libTester.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA9EA450E464263161F6BD14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6C52504A381F7C41B67182 /* Foundation.framework */,
+				AA12F8206E62E7B415ACF0E1 /* UIKit.framework */,
+				7C944BC2B13B3FA5F0101E91 /* libPods-Tester.a */,
+				9E89F1D003930F7FE5EBE620 /* libPods-Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAAB4E1BA682F714FFFE50E0 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				AA613A713697E8E9E6AB31AB /* Request */,
+				AA6945303944BAD4445B8A6F /* Client */,
+				AAD6140F9EE3518738ACC212 /* Response */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		AAD4984ADF584177665EB2F2 = {
+			isa = PBXGroup;
+			children = (
+				AAE5FE10AA73B8B0BF58D30E /* Tester */,
+				AA9EA450E464263161F6BD14 /* Frameworks */,
+				AA8858C16C1B7799495DB67C /* Products */,
+				AA71073E67D83B062E3169C9 /* Tests */,
+				E004F3D37384D48AD646A6A1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD6140F9EE3518738ACC212 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				AAF67FE2ADA5B77379090F09 /* HttpResponse.h */,
+				AAE099E73BF6EE469D4AB217 /* HttpResponse.m */,
+				AA43B3EAF2E61EDA56E566C3 /* HttpStringResponse.h */,
+				AA78889B46E63B2815E8A97C /* HttpStringResponse.m */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		AAE5FE10AA73B8B0BF58D30E /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				AA01453D8EB8DA40D84E17AB /* Models */,
+				AAAB4E1BA682F714FFFE50E0 /* Http */,
+				AA56C8CB120D74D9FD3C57DB /* Controllers */,
+				AA15EC52DAFD549AA1AE2F7F /* Supporting Files */,
+				AA6FB783652324EFB3E7BA31 /* APIHelper.m */,
+				AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */,
+				AA1C1510C4F3D56A3A951CFD /* APIError.m */,
+				AA48BFFBF934C1B6D2406E77 /* APIError.h */,
+				AAED5F1ABE468E7059C07921 /* TestHelper/TestHelper.m */,
+				AAD3E776A95AA25C34B1CED8 /* TestHelper/TestHelper.h */,
+				AA87B0D5C82751CDDB81A704 /* NSDate+extension.h */,
+				AAC241C706904812E6B3DBD1 /* NSDate+extension.m */,
+				AA575224753AD22C62664B85 /* JSONValueTransformer+NSDate.h */,
+				AA49AA68151B551DE5F5CD4F /* JSONValueTransformer+NSDate.m */,
+				AAFCE585F7417595F3776274 /* Configuration.m */,
+				AAFDA2A62B62D6847BB95686 /* Configuration.h */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
+		E004F3D37384D48AD646A6A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40DE6DC38BBB3B2A4E22FFF1 /* Pods-Tester.debug.xcconfig */,
+				DE318A4331D63D048C86858A /* Pods-Tester.release.xcconfig */,
+				C2552ACAF3059C227885F381 /* Pods-Tests.debug.xcconfig */,
+				9C2308BEE547A76427891AD1 /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AA13B6076044B4EB7050DE39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEBEA969AC5C8A953A37217 /* TestBaseController.h in Headers */,
+				AAB7EE1F9E52AE27227954F7 /* SendMixedArrayInput.h in Headers */,
+				AA6F05CDE539FCA5CEB6C753 /* ServerResponse.h in Headers */,
+				AA1CB6712A3295B84DB9178B /* EchoResponse.h in Headers */,
+				AA7E065917E1C724EF86B951 /* Person.h in Headers */,
+				AA6B79FF7448E7660B7228D5 /* Days.h in Headers */,
+				AA776B0F0B5E1C7392E7987B /* DaysHelper.h in Headers */,
+				AA89242CA7F68672538185FA /* SuiteCode.h in Headers */,
+				AAF7400D24EAAAB9555F87BB /* SuiteCodeHelper.h in Headers */,
+				AA67CB3B08876680F16C89F4 /* Employee.h in Headers */,
+				AAC148590469057D243670D0 /* BaseModel.h in Headers */,
+				AA31CBEB3F8B53252394E30B /* ResponseTypesController.h in Headers */,
+				AA329D79EFE33B4EC918A0EB /* ErrorCodesController.h in Headers */,
+				AA2AE5E262A47B2AE9144CDE /* BodyParamsController.h in Headers */,
+				AA965619B87489A9E67937A1 /* FormParamsController.h in Headers */,
+				AA0CB291813F0C9DE22112E6 /* EchoController.h in Headers */,
+				AA5C92E71FB68A10000E8272 /* HeaderController.h in Headers */,
+				AA3698B05CCA44CCFB1E3D3E /* QueryParamController.h in Headers */,
+				AACF04766EFEBE941836F5BA /* TemplateParamsController.h in Headers */,
+				AAB3AA4B658C5443700D0C0C /* APIHelper.h in Headers */,
+				AAC9784606712E2F510C5892 /* NSDate+extension.h in Headers */,
+				AA5C98767EC06D4E40B57A79 /* JSONValueTransformer+NSDate.h in Headers */,
+				AAD9244039DF31452C9D7C2B /* Configuration.h in Headers */,
+				AA9A82CCE1219D4C5910FE3B /* APIError.h in Headers */,
+				AA9E17FED3B6812D11EB1F51 /* TestHelper/TestHelper.h in Headers */,
+				AAD8F51F714DD5966CCD659B /* HttpBodyRequest.h in Headers */,
+				AA727179A75A81C7BFF5708F /* HttpRequest.h in Headers */,
+				AA561654D3DF3A6B4926FBE4 /* IHttpClient.h in Headers */,
+				AAA4DBB5CE589B5B0303FD74 /* HttpContext.h in Headers */,
+				AABB789B7FACBAA15967C8E9 /* BaseController.h in Headers */,
+				AAFBD14918A6E076A0BF62B7 /* HttpResponse.h in Headers */,
+				AADD0D6E9D0D2ECB46296055 /* UnirestClient.h in Headers */,
+				AA9312BDFDCA04EB5F7358C2 /* HttpStringResponse.h in Headers */,
+				AA033D32966F32BFBD65DD34 /* HttpMethod.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA28707B011D40DC5FCAABD7 /* Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "Tester" */;
+			buildPhases = (
+				ABC53F8BDBAF5566EE6CC56A /* 📦 Check Pods Manifest.lock */,
+				AAAD8BEDE6C04F26CD9A967F /* Sources */,
+				AAC01B07AF245CB0CDD170FA /* Frameworks */,
+				AA6976EEF676DCB4C0327BF2 /* CopyFiles */,
+				AA13B6076044B4EB7050DE39 /* Headers */,
+				AA26BF6507704A6409F338B9 /* Build Framework */,
+				56B452E3AF2F9CB544ACA019 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tester;
+			productName = Tester;
+			productReference = AAFFB6F12C34BFAB07465B52 /* libTester.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA2DCD1EBC15E61EA692C99F /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAADD1EA9E00AF9B9F8CDFC0 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				54CD5B104A1532DABBC28192 /* 📦 Check Pods Manifest.lock */,
+				AAE0F287B400F63C88C756EB /* Sources */,
+				AA6953230CA509B32593BC7C /* Frameworks */,
+				AAF4E93AD0B9510E6CB456B5 /* Resources */,
+				4B4C4ED69DFE029DC4B6D472 /* 📦 Embed Pods Frameworks */,
+				C1B0315C87FA00AF03941AD3 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE710D60AF9FA72F99ADA05 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = AA7821CD0DA92EF87789C61D /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD86B0C4A909E780CCAF44D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = APIMatic;
+				TargetAttributes = {
+					AA2DCD1EBC15E61EA692C99F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AA3D5C81EBA16BCDBA6678EE /* Build configuration list for PBXProject "Tester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAD4984ADF584177665EB2F2;
+			productRefGroup = AA8858C16C1B7799495DB67C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA28707B011D40DC5FCAABD7 /* Tester */,
+				AAEE5E87CAD05D168656264B /* Framework */,
+				AA2DCD1EBC15E61EA692C99F /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF4E93AD0B9510E6CB456B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B4C4ED69DFE029DC4B6D472 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54CD5B104A1532DABBC28192 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56B452E3AF2F9CB544ACA019 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tester/Pods-Tester-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA26BF6507704A6409F338B9 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Credit: http://www.raywenderlich.com/65964/create-a-framework-for-ios\nset -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${PODS_ROOT}/Headers/Public/JSONModel/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${PODS_ROOT}/Headers/Public/Unirest/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Copy the public headers into the framework\n/bin/cp -f -r \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		AACF2FCBE910DF27909EEA33 /* MultiBuild Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiBuild Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Taken from Ray Wenderlich tutorial: http://www.raywenderlich.com/65964/create-a-framework-for-ios\n\nset -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nOUTPUT_LOCATION=\"${HOME}/Desktop\"\nif [ ! -w ${OUTPUT_LOCATION} ] ; then OUTPUT_LOCATION=\"${XCS_OUTPUT_DIR}\" ; fi\nif [ ! -w ${OUTPUT_LOCATION} ] ; then OUTPUT_LOCATION=\"/tmp\" ; fi\nif [ ! -w ${OUTPUT_LOCATION} ] ; then echo \"Couldn't find anywhere to write! Dying.\"; exit 1 ; fi\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\necho \"RW_SDK_PLATFORM is ${RW_SDK_PLATFORM}\"\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\necho \"RW_SDK_VERSION is ${RW_SDK_VERSION}\"\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\necho \"RW_OTHER_PLATFORM is ${RW_OTHER_PLATFORM}\"\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\necho \"BUILT_PRODUCTS_DIR is ${BUILT_PRODUCTS_DIR}\"\necho \"RW_OTHER_BUILT_PRODUCTS_DIR is ${RW_OTHER_BUILT_PRODUCTS_DIR}\"\n\n# remove alias and copy, if it's archive\nUNINSTALLED_PRODUCTS_DIRECTORY=\"${BUILT_PRODUCTS_DIR}/../../IntermediateBuildFilesPath/UninstalledProducts\"\n\nif [ -d \"$UNINSTALLED_PRODUCTS_DIRECTORY\" ]; then\necho \"Looks like we're archiving, fixing aliases...\"\nrm \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\ncp \"${UNINSTALLED_PRODUCTS_DIRECTORY}/${RW_INPUT_STATIC_LIB}\" \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\nif [ -d \"$UNINSTALLED_PRODUCTS_DIRECTORY\" ]; then\necho \"Looks like we're archiving, fixing aliases...\"\nrm \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\ncp \"${UNINSTALLED_PRODUCTS_DIRECTORY}/${RW_INPUT_STATIC_LIB}\" \"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\"\nfi\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"";
+		};
+		ABC53F8BDBAF5566EE6CC56A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1B0315C87FA00AF03941AD3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAAD8BEDE6C04F26CD9A967F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2F009821D5B379D796665A /* APIHelper.m in Sources */,
+				AA3FC84281C8B49DAC26F961 /* APIError.m in Sources */,
+				AAD23B63A95A1922D975BDD7 /* TestHelper/TestHelper.m in Sources */,
+				AABE48236E273EF1DB3275E0 /* Configuration.m in Sources */,
+				AA0C599E7D4F200F8897AFF7 /* NSDate+extension.m in Sources */,
+				AA5D573CBB0B8B855EA01619 /* JSONValueTransformer+NSDate.m in Sources */,
+				AA6A70A571DC41D346176BA2 /* SendMixedArrayInput.m in Sources */,
+				AAEDEC951C874573CC2F140C /* ServerResponse.m in Sources */,
+				AA6FEE6B66775D07ABC1A40A /* EchoResponse.m in Sources */,
+				AA82C0EAC5F0BDF611D9F5EE /* Person.m in Sources */,
+				AA369CF5E1EECAA33F665E22 /* DaysHelper.m in Sources */,
+				AA04A8278A806E8556B67412 /* SuiteCodeHelper.m in Sources */,
+				AA25483CB686B6F83D93D99A /* Employee.m in Sources */,
+				AAAC597BE2D31A172141E29F /* BaseModel.m in Sources */,
+				AABA8B9B82339644E947BFAF /* ResponseTypesController.m in Sources */,
+				AA98090BE2C3171059117154 /* ErrorCodesController.m in Sources */,
+				AA9818DB74972243F3C8D7CA /* BodyParamsController.m in Sources */,
+				AA5A84A1C36A9C776EA23E5D /* FormParamsController.m in Sources */,
+				AA529CABAEB521872C72AA54 /* EchoController.m in Sources */,
+				AA869698C6D2546D7C069967 /* HeaderController.m in Sources */,
+				AA6A992AAC458142AD7D115F /* QueryParamController.m in Sources */,
+				AA45F05D18B92E8AC297BB5C /* TemplateParamsController.m in Sources */,
+				AA751EC3D8D1E1F02BC41D50 /* HttpBodyRequest.m in Sources */,
+				AAD0FE4E6546B42C42539D57 /* BaseController.m in Sources */,
+				AAC751CC6398471D8AE95DF2 /* UnirestClient.m in Sources */,
+				AADE4B211C778689E60B2D58 /* HttpContext.m in Sources */,
+				AA19178EE1D12F29A92B4F31 /* HttpResponse.m in Sources */,
+				AA9B8CABE328A66C2F9C101E /* HttpStringResponse.m in Sources */,
+				AA1A7ED3A893EFFCD4DDD12E /* HttpRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE0F287B400F63C88C756EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE3B94FA19A595C3F604173 /* TestBaseController.m in Sources */,
+				AACFD6891D9D5304C68588F9 /* TestResponseTypesController.m in Sources */,
+				AAB4CF31C21632D7D8BE5041 /* TestErrorCodesController.m in Sources */,
+				AAF3192D0D9D1481757BA507 /* TestBodyParamsController.m in Sources */,
+				AA6B5EEB8B2708E4E8F16C7F /* TestFormParamsController.m in Sources */,
+				AAC73F5E8411C02EEC4850B1 /* TestEchoController.m in Sources */,
+				AA583614271A763C447B3909 /* TestHeaderController.m in Sources */,
+				AA4CC555AF28E082DAFFCBF7 /* TestQueryParamController.m in Sources */,
+				AA3273E6387096C87FD58FA3 /* TestTemplateParamsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA64289540A97CFC567617A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA28707B011D40DC5FCAABD7 /* Tester */;
+			targetProxy = AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */;
+		};
+		AAE710D60AF9FA72F99ADA05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA28707B011D40DC5FCAABD7 /* Tester */;
+			targetProxy = AACEBD8E9E09F53ADB403022 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA05B27B66E0C62144B5D5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA24A11CAAB80D4DD12B8F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2308BEE547A76427891AD1 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Tester/Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = Apimatic.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA297EF2FAFA3A4730512B1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DE6DC38BBB3B2A4E22FFF1 /* Pods-Tester.debug.xcconfig */;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/Tester.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		AA424ECAE71F053C848A780A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA898798C13E56D992CE646A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE318A4331D63D048C86858A /* Pods-Tester.release.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/Tester.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		AACEA0FFC440D77D3D224A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AAD9F6B0D7ABAB09FF5859BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAE4BCDAA396863FD3B4811A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2552ACAF3059C227885F381 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = Tester/Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Apimatic.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3D5C81EBA16BCDBA6678EE /* Build configuration list for PBXProject "Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD9F6B0D7ABAB09FF5859BE /* Debug */,
+				AA05B27B66E0C62144B5D5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA424ECAE71F053C848A780A /* Debug */,
+				AACEA0FFC440D77D3D224A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA297EF2FAFA3A4730512B1A /* Debug */,
+				AA898798C13E56D992CE646A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAADD1EA9E00AF9B9F8CDFC0 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE4BCDAA396863FD3B4811A /* Debug */,
+				AA24A11CAAB80D4DD12B8F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD86B0C4A909E780CCAF44D /* Project object */;
+}

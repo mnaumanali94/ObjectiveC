@@ -1,0 +1,18 @@
+PODS:
+  - ISO8601DateFormatter (0.8)
+  - JSONModel (1.2.0)
+  - Unirest (1.1.4)
+
+DEPENDENCIES:
+  - ISO8601DateFormatter (~> 0.7)
+  - JSONModel
+  - Unirest (~> 1.1.2)
+
+SPEC CHECKSUMS:
+  ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  Unirest: 5e4d93eaf32463bf619a4ecd3bbc8c32acf21eac
+
+PODFILE CHECKSUM: 3b5d50c02e6c305393ea575a7b0070c1a135b0f4
+
+COCOAPODS: 1.0.0

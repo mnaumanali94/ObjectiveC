@@ -1,0 +1,18 @@
+platform :ios, '6.0'
+
+#required pods
+def required_pods
+    pod 'Unirest', '~> 1.1.2'
+    pod 'JSONModel'
+    pod 'ISO8601DateFormatter', '~> 0.7'
+end
+
+target 'Tester' do
+    required_pods
+end
+
+
+target 'Tests' do
+    required_pods
+end
+
