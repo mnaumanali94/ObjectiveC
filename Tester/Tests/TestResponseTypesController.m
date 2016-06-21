@@ -227,7 +227,7 @@
 
         // Test whether the captured response is as we expected
         XCTAssertTrue(response!=nil);
-        XCTAssertTrue([[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://doc-0c-6k-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/36nj82cco8n91vi5ri0tv0pmll1j7m6d/1466488800000/11635444525882686240/*/0B8oIayVcw9VgZS1xQy04YTcwMmc?e=download"]] isEqualToData:response]);
+        XCTAssertTrue([[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://cvws.icloud-content.com/B/AQzqrzYzZkfsimeekfSbr_jAIPa6AXohXYxt7JRl_dY7WHxgZJG--DYp/binary.png?o=ArQ-mYRK9QbvCkpS8vxIgKLvadalJimUeE7r1BvRjT0q&v=1&x=3&a=BcFVcT6AJ98UA7ftMw&e=1466495459&k=DeSeGT0tePEcstMjkgECzw&fl=&r=988e38e2-56e6-0a16-8f1d-67ec63625fc6-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=17&s=vVa6vdbnko7yc8K6z8QX3SAwdKw&cd=i"]] isEqualToData:response]);
         [expectation fulfill];
     }];
     [self wait];

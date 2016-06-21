@@ -794,6 +794,7 @@
 				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
 				INFOPLIST_FILE = Tester/Tests/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Apimatic.Tester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -823,6 +824,7 @@
 				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
 				INFOPLIST_FILE = Tester/Tests/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = Apimatic.Tester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
