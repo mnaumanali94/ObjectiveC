@@ -227,7 +227,7 @@
 
         // Test whether the captured response is as we expected
         XCTAssertTrue(response!=nil);
-        XCTAssertTrue([[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/31838656/binary.png"]] isEqualToData:response]);
+        XCTAssertTrue([[NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://doc-0c-6k-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/36nj82cco8n91vi5ri0tv0pmll1j7m6d/1466488800000/11635444525882686240/*/0B8oIayVcw9VgZS1xQy04YTcwMmc?e=download"]] isEqualToData:response]);
         [expectation fulfill];
     }];
     [self wait];

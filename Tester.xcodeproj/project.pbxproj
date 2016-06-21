@@ -126,7 +126,6 @@
 
 /* Begin PBXFileReference section */
 		40DE6DC38BBB3B2A4E22FFF1 /* Pods-Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tester/Pods-Tester.debug.xcconfig"; sourceTree = "<group>"; };
-		41F4EB891D1911DB0065691D /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = info.plist; path = ../info.plist; sourceTree = "<group>"; };
 		7C944BC2B13B3FA5F0101E91 /* libPods-Tester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2308BEE547A76427891AD1 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9E89F1D003930F7FE5EBE620 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,7 +395,6 @@
 				AA56C8CB120D74D9FD3C57DB /* Controllers */,
 				AA15EC52DAFD549AA1AE2F7F /* Supporting Files */,
 				AA6FB783652324EFB3E7BA31 /* APIHelper.m */,
-				41F4EB891D1911DB0065691D /* info.plist */,
 				AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */,
 				AA1C1510C4F3D56A3A951CFD /* APIError.m */,
 				AA48BFFBF934C1B6D2406E77 /* APIError.h */,
@@ -794,9 +792,10 @@
 				DSTROOT = /tmp/Tester.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
-				INFOPLIST_FILE = Tester/info.plist;
+				INFOPLIST_FILE = Tester/Tests/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Apimatic.Tester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
@@ -822,9 +821,10 @@
 				DSTROOT = /tmp/Tester.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
-				INFOPLIST_FILE = Tester/info.plist;
+				INFOPLIST_FILE = Tester/Tests/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
 				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Apimatic.Tester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
