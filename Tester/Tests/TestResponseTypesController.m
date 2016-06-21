@@ -344,7 +344,7 @@
         XCTAssertTrue(response!=nil);
 
  
-                XCTAssertEqualObjects([NSDate NSDateFromNSString: @"2016-03-13T12:52:32.123Z"], response);
+                XCTAssertEqualObjects([NSDate NSDateFromNSString: @"2016-03-13T19:52:32.123Z"], response);
                 [expectation fulfill];
     }];
     [self wait];
@@ -365,7 +365,7 @@
         XCTAssertTrue(response!=nil);
 
         // Deserialize expected output
-        NSArray* expected = (NSArray*) [APIHelper jsonDeserializeArray: @"[\"2016-03-13T12:52:32.123Z\",\"2016-03-13T12:52:32.123Z\",\"2016-03-13T12:52:32.123Z\"]"];
+        NSArray* expected = (NSArray*) [APIHelper jsonDeserializeArray: @"[\"2016-03-13T19:52:32.123Z\",\"2016-03-13T19:52:32.123Z\",\"2016-03-13T19:52:32.123Z\"]"];
 
         NSSet* ExpectedSet = [NSSet setWithArray:expected];
         NSSet* ResultSet = [NSSet setWithArray:response];

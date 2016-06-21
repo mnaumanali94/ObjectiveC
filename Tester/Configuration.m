@@ -7,5 +7,5 @@
 #import "Configuration.h"
 
 /** The base Uri for API calls */
-NSString* Configuration_BaseUri = @"http://apimatic.hopto.org:3000";
+NSString* Configuration_BaseUri = @"https://api-tester.azurewebsites.net";
 

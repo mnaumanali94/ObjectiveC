@@ -17,7 +17,7 @@ static const NSTimeInterval timeOut = 60;
 	[super setUp];
     
     //Set Configuration parameters for test execution
-  Configuration_BaseUri = @"http://api-tester.azurewebsites.net";
+  Configuration_BaseUri = @"http://apimatic.hopto.org:3000";
 
 }
 
