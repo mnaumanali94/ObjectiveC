@@ -126,6 +126,7 @@
 
 /* Begin PBXFileReference section */
 		40DE6DC38BBB3B2A4E22FFF1 /* Pods-Tester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tester/Pods-Tester.debug.xcconfig"; sourceTree = "<group>"; };
+		41F4EB891D1911DB0065691D /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = info.plist; path = ../info.plist; sourceTree = "<group>"; };
 		7C944BC2B13B3FA5F0101E91 /* libPods-Tester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2308BEE547A76427891AD1 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9E89F1D003930F7FE5EBE620 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -395,6 +396,7 @@
 				AA56C8CB120D74D9FD3C57DB /* Controllers */,
 				AA15EC52DAFD549AA1AE2F7F /* Supporting Files */,
 				AA6FB783652324EFB3E7BA31 /* APIHelper.m */,
+				41F4EB891D1911DB0065691D /* info.plist */,
 				AA49A4D678BA2CF98CE5E8A7 /* APIHelper.h */,
 				AA1C1510C4F3D56A3A951CFD /* APIError.m */,
 				AA48BFFBF934C1B6D2406E77 /* APIError.h */,
@@ -745,6 +747,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -773,6 +776,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Tester/Tests/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -785,10 +789,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40DE6DC38BBB3B2A4E22FFF1 /* Pods-Tester.debug.xcconfig */;
 			buildSettings = {
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Tester.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
+				INFOPLIST_FILE = Tester/info.plist;
+				INFOPLIST_PREPROCESS = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
@@ -810,10 +817,13 @@
 			baseConfigurationReference = DE318A4331D63D048C86858A /* Pods-Tester.release.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/Tester.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tester/Tester-Prefix.pch";
+				INFOPLIST_FILE = Tester/info.plist;
+				INFOPLIST_PREPROCESS = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
@@ -847,6 +857,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -881,6 +892,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = Tester/Tests/Info.plist;
+				INFOPLIST_PREPROCESS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -899,7 +911,7 @@
 				AA05B27B66E0C62144B5D5CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		AA6B40043ACECBE13E13500A /* Build configuration list for PBXAggregateTarget "Framework" */ = {
 			isa = XCConfigurationList;
@@ -908,7 +920,7 @@
 				AACEA0FFC440D77D3D224A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		AA82ACA3B71B3D8AC53528FE /* Build configuration list for PBXNativeTarget "Tester" */ = {
 			isa = XCConfigurationList;
@@ -917,7 +929,7 @@
 				AA898798C13E56D992CE646A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		AAADD1EA9E00AF9B9F8CDFC0 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
@@ -926,7 +938,7 @@
 				AA24A11CAAB80D4DD12B8F5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

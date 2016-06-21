@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tester/Tests/TestResponseTypesController.m"
-            timestampString = "487879200.779279"
+            timestampString = "488182362.337178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "-testGetBinary"
             landmarkType = "5">
             <Locations>

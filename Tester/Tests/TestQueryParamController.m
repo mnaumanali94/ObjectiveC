@@ -44,14 +44,14 @@
 
         // Set callback and perform API call
         [self.controller simpleQueryAsyncWithBoolean: boolean number : number string : string  queryParameters : queryParams  completionBlock:^(BOOL success, HttpContext* context, ServerResponse* response, NSError* error) { 
-       // Test response code
+        // Test response code
         XCTAssertEqual(200, context.response.statusCode);
 
         // Test whether the captured response is as we expected
         XCTAssertTrue(response!=nil);
 
 		NSString* rawBody = [[NSString alloc] initWithData:context.response.rawBody encoding:NSUTF8StringEncoding];		
-       XCTAssertTrue([TestHelper isJsonObjectProperSubsetOf:@"{\"passed\":true}" 
+        XCTAssertTrue([TestHelper isJsonObjectProperSubsetOf:@"{\"passed\":true}"
                 rightObject: rawBody
                 checkValues: true
                 allowExtra: true
